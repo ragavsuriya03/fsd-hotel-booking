@@ -1,39 +1,16 @@
-body {
-    margin:0 auto;
-    background-color:#e0e0e0;
-    height: 100%;
-    width: 100%;
-}
-header{
-    background-color:rosybrown;
-}
-#logo{
-    height:60px;
-    width: 60px;
-}
-section{
-    height:100%;
-    width: 100%;
-}
 #img{
-    margin-top:2%;
-    margin-left:4%;
-    margin-right:4%;
+    margin-top: 8%;
+    margin-left: 4%;
 }
-#form1{
+#booking-form{
     margin:0% 4% 1% 4%;
 }
-#description{
-    margin:1% 4% 2% 4%;
+#hotel-desc{
+    margin-left: 4%;
+    padding-bottom: 6%;
+    position: absolute;
 }
-.cityimage{
+.hotel-image{
     height:500px;
     width:500px;
-}
-.socialmedia{
-    height: 20px;
-    width:22px;
-}
-footer{
-    background-color:rosybrown;
 }
