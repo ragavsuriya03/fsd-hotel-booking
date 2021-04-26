@@ -1,54 +1,68 @@
-html {
-    scroll-behavior: smooth;
-    }
-    #container{
-    display:inline-flex;
-    flex-direction: column;
-    width:100%;
-    }
-    #list-view{
-    background-color: lightgrey;
-    margin: 2%;
-    margin-left: 5%;
-    width: 40%;
-    height: auto;
-    display:inline-flex;
-    
-    }
-  
-    
-    .list-view1 {
+/* .view {
+    text-decoration: none;
+    padding-left: 42%;
+    padding-right: 2%;
+
+} */
+
+.hotelImage {
+    height: 250px;
+    width: 250px;
+    align-self: flex-start;
+
+}
+.map-view{
+    display: none;
+}
+.cards {
     display: flex;
-    align-items: flex-start;
-    
-    }
-    .list-view1 .content1 {
-    flex: 1;
-    padding: 15px;
-    
-    }
-    .list-view2 {
-    display: flex;
-    align-items: flex-start;
-    }
-    .list-view2 .content2 {
-    flex: 1;
-    padding: 15px;
-    
-    }
-    .list-view3 {
-    display: flex;
-    align-items: flex-start;
-    }
-    .list-view3 .content3 {
-    flex: 1;
-    padding: 15px;
-    }
-    
-    #list-view:hover{
-    background-color: rosybrown;
-    }
-    #pills-tab {
-    
+    flex-wrap: wrap;
+}
+
+.img-info {
+    flex: 1 1 auto;
+    margin: 5%;
     justify-content: center;
-    }
+    width:300px;
+}
+.contentDiv {
+   
+    margin: 3%;
+    background-color:lightgrey;
+    width: 600px;
+    height: auto;
+    display: flex;
+    flex: 30%;  
+
+}
+
+p>a{
+    color: black;
+}
+.contentDiv:hover{
+    background-color: rosybrown;
+}
+h3{
+    padding-bottom: 4%;
+} 
+#linkStyle{
+    font-weight: bold;
+    padding-top: 5px;
+}
+*{
+text-decoration: none;
+color: black;
+}
+.content{
+padding:4%;
+}
+#links{
+    margin:2%;
+  }
+  #pills-tab {
+    justify-content: center;
+}
+.checked, .fa-star-half-full{
+    color: orange;
+}
+  

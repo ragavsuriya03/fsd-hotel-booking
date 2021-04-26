@@ -1,68 +1,81 @@
-body,html{
-    margin: 0%;
-    height: 100%;
-    width: 100%;
-    /* background-color: #e0e0e0; */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: black;
     font-family: 'Ubuntu', sans-serif;
 }
-a {
+body{
+    
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background-color: #e0e0e0;
+    font-family: Ubuntu, sans-serif;
+}
+/* .header{
+    background-color:rosybrown;
+    height: 70px;
+  } */
+header {
+          display:flex;
+          top: 0;
+        
+}
+.logo {
+    height:60px; 
+    width:60px;
+    vertical-align: middle;
+    margin: 4px 1%;
+    
+}
+.header{
+background-color:rosybrown;
+position:fixed;
+width:100%;
+}
+
+
+#login-button {
+    position: absolute;
+    top: 15px;
+    right: 5px;
     text-decoration: none;
-    color: black;
+    margin-right: 2%;
+border:none;
+border-radius:5px;
+
 }
-header{
-    top: 0;
-    height: 10%;
-    z-index: 80;
-}
-footer{
- bottom: 0;
- height: 8%;
-}
-header,footer{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: rosybrown;
+
+.footer-style{
+    background-color:rosybrown;
+    display:flex;
+    justify-content:space-between;
+    height:60px;
+    align-items:center;
+    bottom: 0;
     position: fixed;
     width: 100%;
-    overflow-y: hidden;
-}
-#login{
-  text-decoration: none;
-  color: black;
-  border:none;
-border-radius:5px;
-}
-a#logo, img.site-logo{
-    margin-left: 0.8%;
-    height: 70px;
-    width: 70px;
-}
-
-.social-media{
-    height: 20px;
-    width: 22px;
-}
-
-.icons{
-    right:0%;
-    margin-right: 1%;
-    bottom:32%;
-}
-
-.contact-page{
-    bottom:20%;
-    margin-left: 4%;
-    text-decoration: none;
+  top: auto;
     
-    color: black;
-}
+  }
+ 
+   .copy-right{
+    font-size:small;
+  } 
+  .socialLogo{
+    padding-right:3px;
+    height:20px;
+    width:25px;
+  }
+  .a{
+      padding-left: 1%;
+  }
+  
+  
 
-.copyright{
-    font-size: 10px;
-    margin-top: 1rem;
-}
-
-.copyright::before{
-    content: "\00A9";
-}
+   
+    
+    
+      
