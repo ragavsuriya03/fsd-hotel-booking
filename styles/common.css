@@ -2,7 +2,7 @@ body,html{
     margin: 0%;
     height: 100%;
     width: 100%;
-    background-color: #e0e0e0;
+    /* background-color: #e0e0e0; */
     font-family: 'Ubuntu', sans-serif;
 }
 a {
@@ -28,8 +28,10 @@ header,footer{
     overflow-y: hidden;
 }
 #login{
-    justify-content: flex-end;  
-    margin-right: 2%;
+  text-decoration: none;
+  color: black;
+  border:none;
+border-radius:5px;
 }
 a#logo, img.site-logo{
     margin-left: 0.8%;
@@ -43,16 +45,22 @@ a#logo, img.site-logo{
 }
 
 .icons{
+    right:0%;
     margin-right: 1%;
+    bottom:32%;
 }
 
 .contact-page{
-    margin-left: 2%;
+    bottom:20%;
+    margin-left: 4%;
+    text-decoration: none;
+    
+    color: black;
 }
 
 .copyright{
     font-size: 10px;
-    text-align: center;
+    margin-top: 1rem;
 }
 
 .copyright::before{
