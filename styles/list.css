@@ -6,23 +6,30 @@
 #listview{
     scroll-behavior:smooth;
 }
+
 #mapview{
     scroll-behavior: smooth;
     display: none;
 }
+
 .hotel{
-    margin-top: 2.4%;
-    margin-bottom: 1.8%;
-    margin-left: 4.2%;
-    margin-right: 4.2%;
-    background-color: rgb(132,136,139);
+    margin: 3% 5.2% 1.8% 4.8%;
+    background-color: lightgray;
     width: 40%;
-    float:left;
+    float: left;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
 }
 .hotel-image{
-      height:250px;
-      width:250px;
+    height:230px;
+    width:250px;
 } 
+.hotel-name{
+    margin-left: 3%;
+    display: flex;
+    flex-direction: column;
+}
 h3,p{
      text-decoration: none;
      color:black;

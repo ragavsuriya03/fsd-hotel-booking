@@ -1,16 +1,56 @@
-#img{
-    margin-top: 8%;
-    margin-left: 4%;
+.content{
+    margin: 8% 2% 0;
+    width: auto;
+    max-height: 400px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    border: 1px solid black;
+    box-sizing: border-box;
 }
-#booking-form{
-    margin:0% 4% 1% 4%;
+.primary-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    border: 1px solid black;
+    padding-right: 20px;
 }
-#hotel-desc{
-    margin-left: 4%;
-    padding-bottom: 6%;
-    position: absolute;
+form{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+    justify-content: space-around;
+}
+.content #img{
+    flex-grow: 3;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 1%;
+    padding-top: 1%;
+    border: 1px solid black;
+}
+
+.form-elements{
+    display: flex; 
+    padding: 1.4em;
+}
+.form-label{
+    flex:1;
+}
+.form-input{
+    width:60%;
 }
 .hotel-image{
-    height:500px;
-    width:500px;
+    max-height: 350px; 
+    width: 500px;
 }
+.hotel-desc__heading{
+    font-family:cursive;
+}  
+.hotel-desc{
+    margin: 3.4% 2%;
+}
+  
+  

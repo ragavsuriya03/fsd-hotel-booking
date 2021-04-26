@@ -9,55 +9,79 @@
         <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
     </head>
     <body>
-        <div id="main-wrapper">
+        
             <header> 
-                <a href="index.html"> <img id="logo" src = "assests/images/logo.png" alt="logo" width="200px" height="150px"></a>
+                <a href="index.html" id="logo"> <img class="site-logo" src = "assests/images/logo.png" alt="logo" width="200px" height="150px"></a>
                 <a href ="login.html" id="login">Login</a>
             </header>
-
-            <div id="content">
-
-                <div id="img">
-                    <img   class="hotel-image" src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"/>
+            
+            
+            <main class="content">
+                <div id="img" class="primary-section">
+                    <img class="hotel-image" src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"/>
                     </br>
                 </div><!--img-->
 
-                <div id="booking-form">
-                    <form action="payment.html" target="_self">
-                        <label for="Adult">Adults:</label>
-                        <input type="number" id="Adult" name="Adult" min="1" required></br>
-                        <label for="Name" >Name:</label>
-                        <input type="text" id="Name" name="Name" autocomplete="off" required></br>
-                        <label for ="From Date">From Date:</label>
-                        <input type="date" id="FromDate" name="From Date" required></br>
-                        <label for="To Date">To Date:</label>
-                        <input type="date" id="ToDate" name="To Date" require></br>
-                        <label for="Total">Total:</label>
-                        <input type="text" id="Total" name="Total" readonly></br>
-                        <input type="submit" value="Book Now">
+                <div id="booking-form" class="primary-section">
+                    <form action="payment.html" method="GET" target="_self" autocomplete="off" >
+                        <ul style="list-style-type: none;">
+                            <li class="form-elements">
+                            <label class="form-label" for="adult">Adults:</label>
+                            <input class="form-input" type="number" id="adult" name="adult" min="1" required autocomplete="off" value="1"><br/></li>
+            
+                            <li class="form-elements" >
+                            <label class="form-label" for="name">Name:</label>
+                            <input class="form-input" type="text" id="name" name="name" required autocomplete="off"><br/></li>
+            
+                            <li class="form-elements" >
+                            <label class="form-label" for="date1">From Date:</label>
+                            <input class="form-input" type="date" id="date1" name="date1" required autocomplete="off"/><br/></li>
+            
+                            <li class="form-elements" >
+                            <label class="form-label" for="date2">To Date:</label>
+                            <input class="form-input" type="date" name="date2" id="date2" required autocomplete="off" /><br/></li>
+            
+                            <li class="form-elements" >
+                            <label class="form-label" for="price">Total:</label>
+                            <input class="form-input" type="text" name="price" id="price" autocomplete="off" readonly/><br/></li>
+            
+                            <li style="display: flex;justify-content: center;">
+                            <a href="payment.html" target="_self">
+                            <button style="padding:10px" id="bookNow">Book Now</button> </a></li>
+                        </ul>
                     </form>
                 </div><!--booking-form-->
-
-                <div id="hotel-desc">
-                    <h2>Radisson Blu Hotel</h2>
-                    <h3>RATING</h3>
-                    <p>5 Star</p>
-                    <h3>AMENITIES</h3>
+            </main><!--main-->
+            <section>
+                <div class="hotel-desc">
+                    <h2>Radisson Blu Hotel</h2></br>
+                    <span class="hotel-desc__heading">  
+                        <strong>RATING</strong> </br></br>
+                        5 Star </br></br>
+                    </span>
+                    <span class="hotel-desc__heading"> 
+                        <strong>AMENITIES </strong>
+                    </span>
                     <ul>
                         <li>Room Service</li>
                         <li>Restaurant</li>
-                        <li>Business Center</li>
-                        <li>Fitness Center </li>
+                        <li>Business center</li>
+                        <li>Fitness center</li>
                         <li>Pool</li>
                     </ul>
-                    <h5>DESCRIPTION</h5>
+                    <div style="margin-bottom: 5%; position: absolute; padding-bottom: 6%;">
+                    <span class="hotel-desc__heading">
+                        <strong>DESCRIPTION</strong>
+                    </span>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+                   </div>
                 </div><!--hotel-desc-->
-
-            </div><!--content-->
-
+            </section>
+            
             <footer>
                 <a href ="contact.html" target="_self" class="contact-page">Contact Us</a></br>
+                <p class="copyright"> 2020 ROOM SEARCH PVT. LTD.</p>
+                <br/>
                 <div class="icons">
                     <a href="https://www.facebook.com" target="_blank">
                         <img class="social-media" src="assests\images\facebook.png" alt="Facebook"/></a>
@@ -66,9 +90,8 @@
                     <a href="https://twitter.com" target="_blank">
                         <img  class="social-media" src="assests/images/twitter.png" alt="Twitter "/></a>
                 </div><!--icons class-->
-                <br/>
-                    <p class="copyright"><span>&copy;</span> 2020 ROOM SEARCH PVT. LTD.</p>  
+                      
             </footer>
-        </div><!--main-wrapper-->
+    
     </body>
 </html> 
